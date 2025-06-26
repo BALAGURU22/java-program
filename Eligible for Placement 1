@@ -11,11 +11,14 @@ public class Solution {
         System.out.println("Name of the Student:"+a);
         
         
-        if (c>=70) {
+        if (b==1 && c>=70) {
             System.out.println(a+ " is Eligible for Placement");
             
-        }else if (c<=70) {
-           System.out.println(a+ " is Not Eligible for Placement"); 
+        }else if (b==1|| b==2 && c>=75) {
+           System.out.println(a+ " is Eligible for Placement"); 
+        }
+        else{
+            System.out.println(a+ " is Not Eligible for Placement"); 
         }
     }
 }
