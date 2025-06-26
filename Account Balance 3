@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int bal=sc.nextInt();
+        int car=sc.nextInt();
+        switch(car)
+        {
+        case 1:
+             int dep=sc.nextInt();
+                bal=bal+dep;
+              System.out.println(bal);
+            break;   
+                
+        case 2: 
+                int with=sc.nextInt();
+                if(bal<with){
+                     System.out.println("Insufficient Balance");
+                }
+                else{
+                    bal=bal-with;
+                    System.out.println(bal);
+                }   
+                break;
+            default:
+                System.out.println("Invalid Input");
+                break;
+                
+            
+        }
+    }
+}
